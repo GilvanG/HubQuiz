@@ -1,23 +1,14 @@
 import React from 'react';
-import styled from 'styled-components';
 import { useRouter } from 'next/router';
 import db from '../db.json';
-import QuizBackground from '../src/components/QuizBackground';
-import Widget from '../src/components/Widget';
+import Input from '../src/components/Input';
+import Button from '../src/components/Button';
 import Footer from '../src/components/Footer';
-import GitHubCorner from '../src/components/GitHubCorner';
+import Widget from '../src/components/Widget';
 import QuizLogo from '../src/components/QuizLogo';
-
-export const QuizContainer = styled.div`
-  width: 100%;
-  max-width: 350px;
-  padding-top: 45px;
-  margin: auto 10%;
-  @media screen and (max-width: 500px) {
-    margin: auto;
-    padding: 15px;
-  }
-`;
+import GitHubCorner from '../src/components/GitHubCorner';
+import QuizContainer from '../src/components/QuizContainer';
+import QuizBackground from '../src/components/QuizBackground';
 
 export default function Home() {
   const [name, setName] = React.useState('');
@@ -38,16 +29,17 @@ export default function Home() {
               router.push(`quiz?name=${name}`);
             }}
             >
-              <input
-                onChange={(event) => {
+              <Input
+                name="Nome de Usuario"
+                value={name}
+                Change={(event) => {
                   setName(event.target.value);
                 }}
-                placeholder="Olá, Qual o seu Nome?"
+                inText="Olá, Qual o seu Nome?"
               />
-              <button type="submit" disabled={name.length === 0}>
-                Jogar
-                {name}
-              </button>
+              <Button type="submit" disabled={name.length === 0}>
+                {`Jogar ${name}`}
+              </Button>
             </form>
           </Widget.Content>
         </Widget>
