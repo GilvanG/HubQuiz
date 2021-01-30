@@ -7,12 +7,15 @@
     "start": "next start"
   },
   "dependencies": {
+    "@crello/react-lottie": "github:crello/react-lottie",
     "framer-motion": "^3.2.2-rc.1",
+    "loop": "^3.3.4",
     "next": "latest",
     "prop-types": "^15.7.2",
     "react": "^16.8.0",
     "react-dom": "^16.8.0",
     "react-is": "^16.8.0",
+    "react-lottie": "^1.2.3",
     "react-native-notification-sounds": "^0.5.2",
     "styled-components": "^5.0.0",
     "use-sound": "^2.0.1"

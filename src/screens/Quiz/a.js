@@ -1,17 +1,15 @@
 /* eslint-disable linebreak-style */
 /* eslint-disable react/prop-types */
-import React from 'react';
-import Lottie from 'react-lottie';
-// import db from '../../../db.json';
+import React, { useState } from 'react';
+import { Lottie } from 'react-lottie';
+import Button from '../../components/Button';
 import Widget from '../../components/Widget';
 import QuizLogo from '../../components/QuizLogo';
-import QuizBackground from '../../components/QuizBackground';
-import QuizContainer from '../../components/QuizContainer';
-import AlternativesForm from '../../components/AlternativesForm';
-import Button from '../../components/Button';
 import BackLinkArrow from '../../components/BackLinkArrow';
-
-import loadingAnimation from './animations/loading.json';
+import QuizContainer from '../../components/QuizContainer';
+import QuizBackground from '../../components/QuizBackground';
+import AlternativesForm from '../../components/AlternativesForm';
+import animationData from '../../animations/loading.json'
 
 function ResultWidget({ resultQuestions }) {
   const imgResult = 'https://media.giphy.com/media/dI4C6ZhNb3FBK/giphy.gif';
@@ -24,7 +22,6 @@ function ResultWidget({ resultQuestions }) {
           }
           return somatorio;
         }, 0)} */}
-        <BackLinkArrow href="/" />
         {resultQuestions.filter((x) => x).length}
         {' '}
         de
@@ -75,20 +72,37 @@ function ResultWidget({ resultQuestions }) {
 }
 
 function LoadingWidget() {
+  const [isLiked, setLikeState] = useState(false);
+  const [animationState, setAnimationState] = useState({
+    isStopped: false, isPaused: false,
+    direction: -1,
+  });
+
+  const defaultOptions = {
+    loop: false,
+    autoplay: false,
+    animationData,
+    rendererSettings: {
+      preserveAspectRatio: 'xMidYMid slice',
+    },
+  };
   return (
     <Widget>
       <Widget.Header>
         Carregando...
       </Widget.Header>
 
-      <Widget.Content style={{ display: 'flex', justifyContent: 'center' }}>
-        {/* <Lottie
-          width="200px"
-          height="200px"
-          className="lottie-container basic"
-          loop="true"
-          config={{ animationData: loadingAnimation, loop: true, autoplay: true }}
-        /> */}
+      <Widget.Content>
+        <div className="animation">
+          <Lottie
+            options={defaultOptions}
+            width={400}
+            height={400}
+            direction={animationState.direction}
+            isStopped={animationState.isStopped}
+            isPaused={animationState.isPaused}
+          />
+        </div>
       </Widget.Content>
     </Widget>
   );
@@ -163,7 +177,6 @@ function QuestionWidget({
                   name={questionId}
                   onChange={() => setSelectedAlternative(alternativeIndex)}
                   type="radio"
-                  disabled={isQuestionSubmited}
                 />
                 {alternative}
               </Widget.Topic>
@@ -190,13 +203,13 @@ const screenStates = {
   RESULT: 'RESULT',
 };
 export default function QuizPage({ externalQuestions, externalBg }) {
-  const [screenState, setScreenState] = React.useState(screenStates.LOADING);
-  const [results, setResults] = React.useState([]);
+  const bg = externalBg;
   const [currentQuestion, setCurrentQuestion] = React.useState(0);
   const questionIndex = currentQuestion;
+  const [results, setResults] = React.useState([]);
   const question = externalQuestions[questionIndex];
   const totalQuestions = externalQuestions.length;
-  const bg = externalBg;
+  const [screenState, setScreenState] = React.useState(screenStates.LOADING);
 
   function addResult(result) {
     // results.push(result);

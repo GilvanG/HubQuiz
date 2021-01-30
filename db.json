@@ -25,6 +25,39 @@
          "Eevee",
          "Evemon"
       ]
+    },
+    {
+      "image": "https://images.saymedia-content.com/.image/t_share/MTc0NDU4MDI0OTk0NDgxNzk4/smartest-pokemon-professors.png",
+      "title": "QUEM É ESSA?",
+      "description": "Preto no Branco",
+      "answer": 0,
+      "alternatives": [
+         "Professora Juniper",
+         "Tia do Pastel",
+         "Doutora Hellen"
+      ]
+    },
+    {
+      "image": "https://i.etsystatic.com/22167368/r/il/5f3f57/2488088194/il_570xN.2488088194_6dk2.jpg",
+      "title": "QUANTO CUSTA ESSA CARTA?",
+      "description": "Em 2020, ela foi leiloada por aproximadamente ....",
+      "answer": 2,
+      "alternatives": [
+         "US$ 2750.00",
+         "US$ 15400.00",
+         "US$ 369000.00"
+      ]
+    },
+    {
+      "image": "https://s2.glbimg.com/GyESvMX4wCPDmEFGxiWsPWi50iQ=/0x0:1277x718/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2020/B/K/KsVtjeRoWtvaKza1f16w/gigantamax.jpg",
+      "title": "QUAL O NOME DESTES POKEMONS?",
+      "description": "Não vale RED e BLUE",
+      "answer": 0,
+      "alternatives": [
+         "Urshifu e Urshifu ",
+         "Urshifu e Wanshifu ",
+         "Orshifo e Urshefu "
+      ]
     }
   ],
   "external": [
