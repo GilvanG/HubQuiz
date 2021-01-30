@@ -4,7 +4,12 @@ import styled from 'styled-components';
 
 const Button = styled.button`
   background-color: ${({ theme }) => theme.colors.secondary};
-  color: ${({ theme }) => theme.colors.contrastText2};
+  color: ${({ theme }) => {
+    if (theme.colors.contrastText2 === '#f0f0f0') {
+      return theme.colors.contrastText2;
+    }
+    return theme.colors.contrastText;
+  }};
   border-radius: ${({ theme }) => theme.borderRadius};
   border: 0;
   width: 100%;

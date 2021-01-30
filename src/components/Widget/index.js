@@ -27,7 +27,12 @@ Widget.Header = styled.header`
   align-items: center;
   padding: 18px 32px;
   background-color: ${({ theme }) => theme.colors.primary};
-  color:${({ theme }) => theme.colors.contrastText2};
+  color:${({ theme }) => {
+    if (theme.colors.contrastText2 === '#f0f0f0') {
+      return theme.colors.contrastText2;
+    }
+    return theme.colors.contrastText;
+  }};
   * {
     margin: 0;
   }
@@ -35,6 +40,7 @@ Widget.Header = styled.header`
 
 Widget.Content = styled.div`
   padding: 24px 32px 32px 32px;
+    
   & > *:first-child {
     margin-top: 0;
   }

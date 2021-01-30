@@ -1,4 +1,6 @@
-import styled from 'styled-components'
+/* eslint-disable linebreak-style */
+import styled from 'styled-components';
+import React from 'react';
 
 // src/components/Footer/index.js
 const FooterWrapper = styled.footer`

@@ -4,30 +4,32 @@
   "description": "Teste os seus conhecimentos sobre CSS e vamos ver quantos layouts você vai deixar de quebrar",
   "questions": [
     {
-      "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
-      "title": "Como fazer um seletor por id via CSS?",
-      "description": "Essa é pra aquecer",
+      "image": "https://pbs.twimg.com/media/CM9JqZYXAAALe5x.png",
+      "title": "QUEM É ESSE POKEMON?",
+      "description": "Essa é classico",
       "answer": 2,
       "alternatives": [
-        ".elemento",
-        "*elemento",
-        "#elemento",
-        "%elemento"
+        "Raiomon",
+        "Rato Amarelo",
+        "Pikachu",
+        "Rato Eletrico"
       ]
     },
     {
-      "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
-      "title": "Como fazer um background gradiente com css?",
-      "description": "Faz tempo em haha",
-      "answer": 0,
+      "image": "https://2.bp.blogspot.com/-MixDoaSRyKc/W32euRH0W6I/AAAAAAAAMLg/9mQfMrwVzzkz0GJsIPtfZy1uQuf_o9EyACLcBGAs/s1600/whos-that-pokemon-eevee.png",
+      "title": "QUEM É ESSE POCKET MONSTER?",
+      "description": "Esse é Multiuso",
+      "answer": 1,
       "alternatives": [
-         "background: linear-gradient(#e66465, #9198e5);",
-         "background: gradient(#e66465, #9198e5);"
+         "Raposin",
+         "Eevee",
+         "Evemon"
       ]
     }
   ],
   "external": [
-    ""
+    "https://aluraquiz-base.alura-challenges.vercel.app/",
+    "https://aluraquiz-base.alura-challenges.vercel.app/"
   ],
   "theme": {
     "colors": {
