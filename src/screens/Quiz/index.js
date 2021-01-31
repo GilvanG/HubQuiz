@@ -1,8 +1,7 @@
 /* eslint-disable linebreak-style */
 /* eslint-disable react/prop-types */
 import React from 'react';
-import Lottie from 'react-lottie';
-// import db from '../../../db.json';
+import { motion } from 'framer-motion';
 import Widget from '../../components/Widget';
 import QuizLogo from '../../components/QuizLogo';
 import QuizBackground from '../../components/QuizBackground';
@@ -10,8 +9,19 @@ import QuizContainer from '../../components/QuizContainer';
 import AlternativesForm from '../../components/AlternativesForm';
 import Button from '../../components/Button';
 import BackLinkArrow from '../../components/BackLinkArrow';
+import Loading from '../../components/Loading';
 
-import loadingAnimation from './animations/loading.json';
+const container = {
+  hidden: { opacity: 1, scale: 0 },
+  visible: {
+    opacity: 1,
+    scale: 1,
+    transition: {
+      delayChildren: 0.3,
+      staggerChildren: 0.2,
+    },
+  },
+};
 
 function ResultWidget({ resultQuestions }) {
   const imgResult = 'https://media.giphy.com/media/dI4C6ZhNb3FBK/giphy.gif';
@@ -82,13 +92,7 @@ function LoadingWidget() {
       </Widget.Header>
 
       <Widget.Content style={{ display: 'flex', justifyContent: 'center' }}>
-        {/* <Lottie
-          width="200px"
-          height="200px"
-          className="lottie-container basic"
-          loop="true"
-          config={{ animationData: loadingAnimation, loop: true, autoplay: true }}
-        /> */}
+        <Loading />
       </Widget.Content>
     </Widget>
   );
@@ -108,7 +112,16 @@ function QuestionWidget({
   const hasAlternativeSelected = selectedAlternative !== undefined;
 
   return (
-    <Widget>
+    <Widget
+      as={motion.section}
+      transition={{
+        delay: 0,
+        duration: 0.5,
+      }}
+      variants={container}
+      initial="hidden"
+      animate="visible"
+    >
       <Widget.Header>
         <BackLinkArrow href="/" />
         <h3>
