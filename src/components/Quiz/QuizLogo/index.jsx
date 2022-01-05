@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import Image from 'next/image'
 import logo from '../../../assets/logo.png';
 
-function Logo():JSX.Element {
+function Logo() {
   return (
     <>
       <Image 
@@ -16,9 +16,6 @@ function Logo():JSX.Element {
   );
 }
 
-interface Logo {
-  primary: boolean
-}
  
 const QuizLogo = styled(Logo)`
   primary: true;
