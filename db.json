@@ -1,77 +1,91 @@
 {
-  "bg": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/a11de91a-5e1b-447c-9066-64185f3c8cbb/d7a42h1-39a19868-7cd3-47af-b557-118890a140dc.jpg/v1/fill/w_1280,h_720,q_75,strp/_updated__pokeball_wallpaper_by_rushetafan_d7a42h1-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3siaGVpZ2h0IjoiPD03MjAiLCJwYXRoIjoiXC9mXC9hMTFkZTkxYS01ZTFiLTQ0N2MtOTA2Ni02NDE4NWYzYzhjYmJcL2Q3YTQyaDEtMzlhMTk4NjgtN2NkMy00N2FmLWI1NTctMTE4ODkwYTE0MGRjLmpwZyIsIndpZHRoIjoiPD0xMjgwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.Z5Mf32Y3r6WiAqj1Iin-xjTsgApLBqm9b0k1LWoja8E",
-  "title": "Quiz Pokemon TOP",
-  "description": "Teste os seus conhecimentos sobre CSS e vamos ver quantos layouts você vai deixar de quebrar",
+  "bg": "http://s2.glbimg.com/FN4Bm3iS3hgDU2bDYPw-nvi_2L0=/940x523/e.glbimg.com/og/ed/f/original/2015/07/27/thinkstockphotos-480118296.jpg",
+  "title": "Quiz HubLocal",
+  "description": "Porque minha empresa deveria ter a acesso e ser cliente da HubLocal?",
   "questions": [
     {
-      "image": "https://pbs.twimg.com/media/CM9JqZYXAAALe5x.png",
-      "title": "QUEM É ESSE POKEMON?",
-      "description": "Essa é classico",
-      "answer": 2,
+      "image": "https://ndrc.org.za/wp-content/uploads/2021/10/What-are-the-advantages-and-disadvantages-of-debt-review-11.png",
+      "title": "Marque a Alternativa Que Melhor Representa as Vantagens da HubLocal",
+      "description": "Qual das características abaixo é uma das vantagens que a HubLocal traz?",
+      "answer": 4,
       "alternatives": [
-        "Raiomon",
-        "Rato Amarelo",
-        "Pikachu",
-        "Rato Eletrico"
+        "Garante que suas informações estejam atualizadas e consistentes na internet.",
+        "Garante mais acessos e visibilidade, ao seu site.",
+        "Garante os clientes lhe encontrarão com maior facilidade, através de mais rotas aos seus estabelecimentos..",
+        "Garante mais avaliações e notas obtidas pelos usuários, aumentando assim sua reputação.",
+        "Garante todas as vantagens citadas."
       ]
     },
     {
-      "image": "https://2.bp.blogspot.com/-MixDoaSRyKc/W32euRH0W6I/AAAAAAAAMLg/9mQfMrwVzzkz0GJsIPtfZy1uQuf_o9EyACLcBGAs/s1600/whos-that-pokemon-eevee.png",
-      "title": "QUEM É ESSE POCKET MONSTER?",
-      "description": "Esse é Multiuso",
+      "image": "https://gerenciagram.com.br/blog/wp-content/uploads/2018/12/o-que-%C3%A9-social-media.png",
+      "title": "98% das Empresas Brasileiras Não Utilizam de Maneira Eficaz o Marketing Digital, Qual é Um dos Principais Motivos?",
+      "description": "Infelizmente muitas empresas sofrem desse problema (as vezes sem saber), mas o lado bom é que a HubLocal lhe ajuda mapear e monitorar os ___________ da sua empresa.",
       "answer": 1,
       "alternatives": [
-         "Raposin",
-         "Eevee",
-         "Evemon"
+         "Falta de imagens bem editadas.",
+         "Falta de métodos efetivos para mensuração de resultados.",
+         "Falta de uma tipografia definida para postagens e anúncios.",
+         "Falta de postagens em formato carrousel.",
+         "Excesso de métodos para avaliar resultados.",
+         "Excesso de postagens em carrousel.",
+         "Excesso de postagens em geral."
       ]
     },
     {
-      "image": "https://images.saymedia-content.com/.image/t_share/MTc0NDU4MDI0OTk0NDgxNzk4/smartest-pokemon-professors.png",
-      "title": "QUEM É ESSA?",
-      "description": "Preto no Branco",
+      "image": "https://i0.wp.com/raccoon.ag/wp-content/uploads/2018/01/Geomarketing-1.png?fit=720%2C360&ssl=1",
+      "title": "Por Qual dos Motivos a Seguir uma Empresa deve Envestir Em Geomarketing?",
+      "description": "Geomarketing é uma estratégia de negócio bastante útil para um negócio, mas por que?",
       "answer": 0,
       "alternatives": [
-         "Professora Juniper",
-         "Tia do Pastel",
-         "Doutora Hellen"
+         "O geomarketing é uma ferramenta que permite um direcionamento mais apurado e certeiro nas estratégias de segmentação. Ele contribui para uma apuração mais detalhada dos clientes que consomem o seu produto e ajuda a distribuir ofertas personalizadas para eles.",
+         "O geomarketing é uma ferramenta que contribui para uma apuração mais detalhada dos melhores layouts de seus produtos dentro do seu estabelecimento ajudando assim a realizar uma melhor organização.",
+         "O geomarketing é uma ferramenta que permite um direcionamento mais apurado e certeiro para encontrar empresas de marketing perto dos meus clientes.",
+         "O geomarketing é uma ferramenta que contribui para direcionamento mais apurado e certeiro para localização de grandes empresas ou eventos, não influenciando em pequenos estabelecimentos, onde os consumidores obtêm uma maior facilidade na busca por rotas da localidade em questão, facilitando assim a experiência de encontrar o seu negócio na internet."
       ]
     },
     {
-      "image": "https://i.etsystatic.com/22167368/r/il/5f3f57/2488088194/il_570xN.2488088194_6dk2.jpg",
-      "title": "QUANTO CUSTA ESSA CARTA?",
-      "description": "Em 2020, ela foi leiloada por aproximadamente ....",
-      "answer": 2,
+      "image": "https://storage.googleapis.com/gweb-cloudblog-publish/images/066-MAP-Maps_Retail_Hero_Illus-ER_R8P1WuQ.max-1100x1100.png",
+      "title": "Qual das Seguintes Plataformas Não Apresenta Integração Com a HubLocal?",
+      "description": "Que a Hublocal garante aos seus clientes lhe encontrarem com maior facilidade, você já deve saber, mas qual será a plataforma que não apresenta integração com a HubLocal.",
+      "answer": 8,
       "alternatives": [
-         "US$ 2750.00",
-         "US$ 15400.00",
-         "US$ 369000.00"
+         "Apple Maps",
+         "Waze",
+         "Foursquare",
+         "Tomtom",
+         "Yelp",
+         "Whatsapp Locations",
+         "Facebook Places",
+         "Amazon Alexa",
+         "NDA, a HubLocal proporciona a integração com todas essas plataformas.",
+         "Todas estão incorretas, a HubLocal se intrega somente com Google Maps e Uber."
       ]
     },
     {
-      "image": "https://s2.glbimg.com/GyESvMX4wCPDmEFGxiWsPWi50iQ=/0x0:1277x718/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2020/B/K/KsVtjeRoWtvaKza1f16w/gigantamax.jpg",
-      "title": "QUAL O NOME DESTES POKEMONS?",
-      "description": "Não vale RED e BLUE",
-      "answer": 0,
+      "image": "https://nuveto.com.br/wp-content/uploads/2020/09/contact-center.jpg",
+      "title": "Quais Dessas Funcionalidades a HubLocal NÃO Prove?",
+      "description": "Analise as seguintes proposições e indique qual NÃO represa uma das funcionalidades/facilidades que são obtidos com a HubLocal.",
+      "answer": 4,
       "alternatives": [
-         "Urshifu e Urshifu ",
-         "Urshifu e Wanshifu ",
-         "Orshifo e Urshefu "
+         "Facilidade de divulgação, para promoções, cupons de descontos ou campanhas regionais, em diversos sites, apps ou diretórios.",
+         "Gera relatórios de inteligência de mercado, para que você possa descobrir quais são as suas melhores fontes de novos clientes.",
+         "Facilidade na correção e checagem em tempo real de informações incorretas sobre sua empresa, as mantendo sempre completas e atualizadas.",
+         "Facilidade na verificação se sua empresa está presente de forma otimizada em todos os mapas e listas da internet.",
+         "Facilidade no acesso de relatórios de crescimento da empresa de qualquer um que use os serviços da HubLocal.",
+         "Garante todas as funcionalidades citadas."
+
       ]
     }
   ],
-  "external": [
-    "https://aluraquiz-base.alura-challenges.vercel.app/",
-    "https://aluraquiz-base.alura-challenges.vercel.app/"
-  ],
   "theme": {
     "colors": {
-      "primary": "#ee1515",
-      "secondary" : "#222224", 
+      "primary": "#0099ff",
+      "secondary" : "#00cc99", 
       "mainBg": "#f0f0f0",
       "contrastText": "#222224",
       "contrastText2": "#f0f0f0",
-      "wrong": "#FF5722",
+      "wrong": "#ff0022",
+      "w":"#ee1515#FF5722",
       "success": "#4CAF50"
     },
     "borderRadius": "4px"

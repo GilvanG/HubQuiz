@@ -1,7 +1,3 @@
-/* eslint-disable linebreak-style */
-/* eslint-disable jsx-a11y/anchor-is-valid */
-/* eslint-disable react/jsx-props-no-spreading */
-import React from 'react';
 import NextLink from 'next/link';
 import PropTypes from 'prop-types';
 

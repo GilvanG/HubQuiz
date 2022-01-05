@@ -1,4 +1,3 @@
-/* eslint-disable linebreak-style */
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 

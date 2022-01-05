@@ -1,7 +1,4 @@
-/* eslint-disable linebreak-style */
-import React from 'react';
 import styled from 'styled-components';
-import PropTypes from 'prop-types';
 import Link from '../Link';
 
 const StyledLink = styled(Link)`
@@ -15,7 +12,11 @@ const SVG = styled.svg`
   vertical-align: middle;
 `;
 
-export default function BackLinkArrow({ href }) {
+interface BackLinkArrowProp {
+  href: string;
+}
+
+export default function BackLinkArrow({ href }: BackLinkArrowProp) {
   return (
     <StyledLink href={href} style={{ width: '24px', height: '24px', display: 'inline-block' }}>
       <SVG xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -25,6 +26,3 @@ export default function BackLinkArrow({ href }) {
   );
 }
 
-BackLinkArrow.propTypes = {
-  href: PropTypes.string.isRequired,
-};

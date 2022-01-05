@@ -1,4 +1,3 @@
-/* eslint-disable linebreak-style */
 import styled from 'styled-components';
 
 const AlternativesForm = styled.form`
@@ -6,7 +5,7 @@ const AlternativesForm = styled.form`
     
     &[data-selected="true"] {
       background-color: ${({ theme }) => theme.colors.primary};
-      
+      color: ${({ theme }) => theme.colors.mainBg};
       &[data-status="SUCCESS"] {
         background-color: ${({ theme }) => theme.colors.success};
       }

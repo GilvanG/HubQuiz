@@ -1,4 +1,3 @@
-/* eslint-disable react/no-array-index-key */
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useRouter } from 'next/router';
@@ -7,22 +6,10 @@ import Input from '../src/components/Input';
 import Button from '../src/components/Button';
 import Footer from '../src/components/Footer';
 import Widget from '../src/components/Widget';
-import QuizLogo from '../src/components/QuizLogo';
+import QuizLogo from '../src/components/Quiz/QuizLogo';
 import GitHubCorner from '../src/components/GitHubCorner';
-import QuizContainer from '../src/components/QuizContainer';
-import QuizBackground from '../src/components/QuizBackground';
-
-const container = {
-  hidden: { opacity: 1, scale: 0 },
-  visible: {
-    opacity: 1,
-    scale: 1,
-    transition: {
-      delayChildren: 0.3,
-      staggerChildren: 0.2,
-    },
-  },
-};
+import QuizContainer from '../src/components/Quiz/QuizContainer';
+import QuizBackground from '../src/components/Quiz/QuizBackground';
 
 export default function Home() {
   const [name, setName] = React.useState('');
@@ -64,9 +51,17 @@ export default function Home() {
                 inText="Olá, Qual o seu Nome?"
               />
               <Button type="submit" disabled={name.length === 0}>
-                {`Jogar ${name}`}
+                {`Jogar`}
               </Button>
             </form>
+            <p style={{
+              color: "#555555",
+              fontSize: 11,
+              fontWeight: 400,
+              alignItems: 'center',
+              justifyContent:'center'
+            }}>
+              Se estar na dúvidas das vantagens da HubLocal, venha particpar deste pequeno quiz!</p>
           </Widget.Content>
         </Widget>
 
@@ -83,40 +78,7 @@ export default function Home() {
           initial="hidden"
           animate="show"
         >
-          { name.length > 0
-          && [0].map(() => (
-            <Widget.Content
-              as={motion.section}
-              className="container"
-              variants={container}
-              initial="hidden"
-              animate="visible"
-              transition={{
-                delay: 0.5,
-                duration: 1.5,
-              }}
-            >
-              <h1>Quizes da Galera</h1>
-              <ul>
-                {db.external.map((linkExt) => {
-                  const labelLink = linkExt
-                    .replace('https://', '')
-                    .replace('vercel.app', '')
-                    .replace('/', '')
-                    .split('.');
-                  return (
-                    <li key={linkExt}>
-                      <Widget.Topic href={`/quiz/${labelLink[0]}___${labelLink[1]}`}>
-                        {labelLink[0]}
-                        /
-                        {labelLink[1]}
-                      </Widget.Topic>
-                    </li>
-                  );
-                })}
-              </ul>
-            </Widget.Content>
-          ))}
+
           <Footer />
         </Widget>
       </QuizContainer>

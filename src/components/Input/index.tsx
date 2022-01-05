@@ -1,8 +1,4 @@
-/* eslint-disable linebreak-style */
-/* eslint-disable react/jsx-props-no-spreading */
-import React from 'react';
 import styled from 'styled-components';
-import PropTypes from 'prop-types';
 
 const InputBasic = styled.input`
   width: 100%;
@@ -16,7 +12,14 @@ const InputBasic = styled.input`
   margin-bottom: 25px;
 `;
 
-export default function Input({ Change, inText, ...props }) {
+interface InputProp {
+  Change: VoidFunction,
+  inText: string;
+  name: string;
+  value: string;
+}
+
+export default function Input({ Change, inText, ...props }: InputProp) {
   return (
     <div>
       <InputBasic
@@ -27,9 +30,4 @@ export default function Input({ Change, inText, ...props }) {
     </div>
   );
 }
-Input.propTypes = {
-  Change: PropTypes.func.isRequired,
-  inText: PropTypes.string.isRequired,
-  name: PropTypes.string.isRequired,
-  value: PropTypes.string.isRequired,
-};
+

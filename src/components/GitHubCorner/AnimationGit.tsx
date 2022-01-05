@@ -1,16 +1,15 @@
-/* eslint-disable linebreak-style */
 import { useLottie } from 'lottie-react';
-import loadingAnimation from '../../assets/animations/loading.json';
+import git from '../../assets/animations/git2.json';
 
-const Example = () => {
+const AnimationGit = () => {
   const options = {
-    animationData: loadingAnimation,
+    animationData: git,
     loop: true,
     autoplay: true,
     width: 10,
     style: {
       width: '100%',
-      height: '150px',
+      height: '45px',
     },
   };
 
@@ -19,4 +18,4 @@ const Example = () => {
   return View;
 };
 
-export default Example;
+export default AnimationGit;
