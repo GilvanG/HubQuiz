@@ -1,5 +1,9 @@
 # HUBQUIZ 
 
+<p align="center">
+  <img alt="pokebola" src="https://raw.githubusercontent.com/GilvanG/HubQuiz/main/src/assets/logo.png" />
+</p>
+
 > Desafio para Programa de Bolsas HubDev, desenvolvido em Nextjs
 >
 > Quer ver como ta ficando? Acessa a [**DEMO**](https://pokedex-gilvang.vercel.app/)
