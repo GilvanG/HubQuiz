@@ -17,29 +17,14 @@ const container = {
   },
 };
 
-interface questionProp{
-  title: string,
-  description: string,
-  answer: string,
-  image: string,
-  alternatives:Array<string>,
-}
 
-interface QuestionQuizProp{
-    question: questionProp,
-    questionIndex: number,
-    totalQuestions: number,
-    onSubmit: VoidFunction,
-    addResult(result: boolean): void
-}
-
-const QuestionQuiz:React.FC<QuestionQuizProp> = ({
+const QuestionQuiz = ({
   question,
   questionIndex,
   totalQuestions,
   onSubmit,
   addResult,
-}: QuestionQuizProp): JSX.Element => {
+}) => {
   const [selectedAlternative, setSelectedAlternative] = React.useState(undefined);
   const [isQuestionSubmited, setIsQuestionSubmited] = React.useState(false);
   const questionId = `question__${questionIndex}`;

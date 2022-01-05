@@ -6,19 +6,6 @@ import QuestionQuiz from '../../components/Quiz/QuestionQuiz';
 import QuizContainer from '../../components/Quiz/QuizContainer';
 import QuizBackground from '../../components/Quiz/QuizBackground';
 
-interface questionProp{
-  title: string,
-  description: string,
-  answer: string,
-  image: string,
-  alternatives:Array<string>,
-}
-
-interface QuizPageProp{
-  externalQuestions: Array<questionProp>,
-  externalBg,
-}
-
 function LoadingWidget() {
   return (
     <Widget>
@@ -39,7 +26,7 @@ const screenStates = {
   RESULT: 'RESULT',
 };
 
-const QuizPage:React.FC<QuizPageProp> = ({ externalQuestions, externalBg }: QuizPageProp ): JSX.Element => {
+const QuizPage = ({ externalQuestions, externalBg }) => {
   const [screenState, setScreenState] = React.useState(screenStates.LOADING);
   const [results, setResults] = React.useState([]);
   const [currentQuestion, setCurrentQuestion] = React.useState(0);
@@ -48,7 +35,7 @@ const QuizPage:React.FC<QuizPageProp> = ({ externalQuestions, externalBg }: Quiz
   const totalQuestions = externalQuestions.length;
   const bg = externalBg;
 
-  function addResult(result: boolean) {
+  function addResult(result) {
     setResults([
       ...results,
       result,

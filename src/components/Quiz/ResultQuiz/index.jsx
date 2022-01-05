@@ -1,12 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import Widget from '../../Widget';
-import BackLinkArrow from '../../BackLinkArrow';
 
-interface ResultQuizProp{
-  resultQuestions: Array<boolean>,
-}
-
-const ResultQuiz:React.FC<ResultQuizProp> = ({resultQuestions}: ResultQuizProp ): JSX.Element =>  {
+const ResultQuiz = ({resultQuestions}) =>  {
   const [mensage, setMensage] = useState("");
   const [image, setImage] = useState('');
   useEffect(() => {
